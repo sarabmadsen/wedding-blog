@@ -1,0 +1,282 @@
+/*Global styles*/
+
+body {
+  margin: 0;
+  font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+header img {
+  width: 100%;
+}
+
+header {
+  position: relative;
+  padding: 0;
+  margin-bottom: -5px;
+}
+
+.navigation {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  padding: 0.5rem;
+  padding-right: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #111a26;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.current {
+  font-weight: bold;
+}
+
+.space {
+  margin: 0 auto;
+}
+
+.search-field {
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #111a26;
+  border: #111a26 solid 1px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.search-symbol {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+  color: #111a26;
+}
+
+main {
+  background-color: #111a26;
+  padding: 2rem;
+}
+
+main i {
+  color: #99b4bf;
+}
+
+.footer-header {
+  width: 100%;
+}
+
+.footer-content {
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+
+.footer-content p {
+  color: #111a26;
+}
+
+.footer-content i {
+  color: #111a26;
+}
+
+.text-footer {
+  padding: 0.8rem;
+}
+
+h1 {
+  color: #99b4bf;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2 {
+  color: #99b4bf;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 2rem;
+}
+
+h3 {
+  color: #99b4bf;
+  text-align: center;
+}
+
+p {
+  color: #99b4bf;
+}
+
+button,
+.button {
+  background-color: #d9895b;
+  color: #111a26;
+  font-weight: bold;
+  max-width: 90px;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+}
+
+.nav-text a {
+  color: #99b4bf;
+}
+
+.nav-text {
+  margin-top: 0;
+}
+
+.loader {
+  border: 15px solid #99b4bf;
+  border-top: 15px solid #d9895b;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Mobile and tablet styles*/
+@media only screen and (max-width: 834px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  .navigation i {
+    font-size: 1.2rem;
+  }
+  .footer-content i {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
+  }
+  main i {
+    font-size: 1.2rem;
+  }
+  .footer-content p {
+    font-size: 0.8rem;
+  }
+  nav,
+  #hamburger-menu {
+    display: none;
+  }
+  #hamburger-menu:checked ~ nav {
+    display: block;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding-right: 2rem;
+  }
+  li {
+    padding-bottom: 0.5rem;
+  }
+  .footer-header {
+    min-height: 130px;
+  }
+  .logo {
+    position: absolute;
+    bottom: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+/*Desktop styles*/
+@media only screen and (min-width: 835px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  li {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem 2rem 0 2rem;
+  }
+  .search-symbol {
+    font-size: 1.6rem;
+  }
+  .footer-content i {
+    font-size: 1.6rem;
+    color: #111a26;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+  main i {
+    font-size: 1.6rem;
+  }
+  .footer-content p {
+    font-size: 1.1rem;
+  }
+  .hamburger-label,
+  #hamburger-menu {
+    display: none;
+  }
+  ul {
+    margin: 0;
+  }
+  .footer-header {
+    min-height: 150px;
+  }
+  .logo {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    max-width: 400px;
+    width: 100%;
+  }
+  .nav-text a:hover {
+    font-weight: bold;
+  }
+  .search-field:hover {
+    border: #d9895b solid 3px;
+    margin-bottom: 1px;
+  }
+  i:hover {
+    color: #d9895b;
+  }
+  li a:hover {
+    color: #d9895b;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #99b4bf;
+  }
+  .button:hover {
+    background-color: #99b4bf;
+  }
+}

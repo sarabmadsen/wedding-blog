@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact | Wedding Blog</title>
+        <meta name="description" content="Contact the Wedding Blog - A Svalbard fairytale. contact form, email, form and address."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <script
+         src="https://kit.fontawesome.com/17d5012144.js"
+         crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="https://use.typekit.net/oje7wov.css">
+    </head>
+    <body>
+        <header>
+            <div class="navigation">
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="current">Contact</li>
+                    </ul>
+                </nav>
+                <div class="space"></div>
+                <div class="search-field"></div>
+                <div class="search-symbol"><i class="fas fa-search"></i></div>
+            </div>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="wedding blog logo"></a>
+            <img class="footer-header" src="images/header_image1.jpg" alt="Glacier">
+        </header>
+        <main>
+            <p class="nav-text">You are here: <a href="index.html">Home</a> - Contact</p>
+            <h1>Contact</h1>
+            <div class="main-content">
+                <form action="form-success.php" method="POST">
+                    <fieldset>
+                        <div class="sentMessage">Your message has been sent!</div>
+                        <div>
+                            <label for="name">Full name*</label>
+                            <input type="text" name="name" id="name" class="form__input"/>
+                            <div class="form-error" id="nameError">Please enter your full name (min 5 characters)</div>
+                        </div>
+                        <div>
+                            <label for="email">Email address*</label>
+                            <input type="email" name="email" id="email" class="form__input"/>
+                            <div class="form-error" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        <div>
+                            <label for="subject">Subject*</label>
+                            <input type="text" id="subject" name="subject" class="form__input"></input>
+                            <div class="form-error" id="subjectError">Please enter a subject (min 15 characters)</div>
+                        </div>
+                        <div>
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" cols="30" class="form__input"></textarea>
+                            <div class="form-error" id="messageError">Please enter a message (min 25 characters)</div>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="accept" name="accept" value="accept"/>
+                            <label for="accept">I accept the terms & conditions*</label>
+                            <div class="form-error" id="checkboxError">Please accept our terms & conditions</div>
+                        </div>
+                        <input class="button" type="submit" value="Send" />
+                    </fieldset>
+                </form>
+                <div class="content-box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <img src="images/contact.jpg" alt="inreach garmin">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="text-footer">
+                    <p>Copyright 2021 &copy</p>
+                    <p>All photos by: Dagmara Wojtanowicz Photography / www.northern-love.com</p>
+                </div>
+                <div class="space"></div>
+                <div class="symbols-footer">
+                    <a href="https://www.facebook.com/sara.madsen/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/heijeghetersara/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <img class="footer-header" src="images/header_image1.jpg" alt="Glacier">
+        </footer>
+        <script src="js/contact.js"></script>
+    </body>
+</html>

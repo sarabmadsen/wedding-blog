@@ -1,0 +1,61 @@
+/*Global styles*/
+
+.navigation {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.main-text {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+main img {
+  max-width: 450px;
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+main p {
+  text-align: center;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.results-container {
+  min-height: 5rem;
+}
+
+/*Mobile and tablet styles*/
+@media only screen and (max-width: 834px) {
+  .blog-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main i {
+    padding: 1rem;
+  }
+}
+
+/*Desktop styles*/
+@media only screen and (min-width: 835px) {
+  .blog-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .results-container {
+    display: flex;
+    justify-content: center;
+  }
+  main i {
+    margin-bottom: 5rem;
+    padding: 1rem;
+  }
+  .post {
+    padding: 1rem;
+  }
+}

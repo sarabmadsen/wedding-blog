@@ -1,0 +1,67 @@
+/*Global styles*/
+
+main {
+  min-height: 20rem;
+}
+
+.more-link {
+  display: none;
+}
+
+main img {
+  max-width: 450px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  text-align: left;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+main a {
+  color: #99b4bf;
+  font-weight: bold;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+
+/*Mobile and tablet styles*/
+@media only screen and (max-width: 834px) {
+  .blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main p {
+    max-width: 450px;
+  }
+}
+
+/*Desktop styles*/
+@media only screen and (min-width: 835px) {
+  main a:hover {
+    color: #d9895b;
+  }
+  .post {
+    display: flex;
+    justify-content: center;
+  }
+  .post img {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .text {
+    margin-left: 1rem;
+  }
+  main p {
+    max-width: 600px;
+  }
+}
